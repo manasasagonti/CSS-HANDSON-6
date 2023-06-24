@@ -1,0 +1,69 @@
+body{
+    background-color: rgb(217, 217, 84);
+}
+
+.item{
+    width: 100px;
+    height: 100px;
+    gap: 30px;
+    /* border: 2px solid gray; */
+    margin: 20px ;
+    background-color: green;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    text-align: center;
+}
+.item1{
+    transition: all 3s;
+    /* transform-origin: center; */
+}
+.item1:hover{
+    width: 300px;
+}
+.item2{
+    transition: all 3s;
+}
+.item2:hover{
+    height: 300px;
+    width: 300px;
+}
+.item3{
+    transition: all 3s;
+}
+.item3:hover{
+    width: 300px;
+}
+.item4{
+    transition: all 3s;
+}
+.item4:hover{
+    width: 300px;
+}
+.item5{
+    transition: all 3s;
+}
+.item5:hover{
+    width: 300px;
+}
+.item6{
+    transition: all 3s;
+}
+.item6:hover{
+    width: 300px;
+}
+.item7{
+    transition: all 3s;
+}
+.item7:hover{
+    width: 300px;
+}
+a{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}

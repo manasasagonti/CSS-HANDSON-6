@@ -1,0 +1,95 @@
+body{
+    border: 15px solid;
+    border-color: white green white orange;
+}
+
+.sky{
+    background-image: url(sky.jpg);
+    background-position: center;
+    height: 91vh;
+    background-repeat: no-repeat;
+    position: relative;
+    /* border-left: 10px solid orange;
+    border-right: 10px solid green;
+    border-top: 10px solid white; */
+    overflow: hidden;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 50px;
+    font-weight:600;
+}
+.text1{
+    background-color: rgb(237, 155, 3);
+}
+.text2{
+    background-color:white;
+}
+.text3{
+    background-color: green;
+}
+.sun{
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    left: 91.5%;
+    top: 68px;
+    animation: sunMovement 190s linear infinite;
+}
+.city{
+    width: 500%;
+    position: absolute;
+    top: 209px;
+    height: 100%;
+    animation: Movement 50s linear infinite;
+    background-image: url(city.png);
+}
+.road{
+    position: absolute;
+    top: 460px;
+    width: 400%;
+    animation: road 8s linear infinite;
+    height: 230px;
+}
+@keyframes road {
+    100% {
+        transform: translate(-3000px);
+    }
+}
+.car{
+    width: 410px;
+    position: absolute;
+    bottom: 135px;
+    left: 35%;
+}
+.leftwheel{
+    width: 76px;
+    animation: Rotation 1.5s linear infinite;
+    position: absolute;
+    left: 37.3%;
+    top:69.5%
+}
+.rightwheel{
+    width: 76px;
+    animation: Rotation 2s linear infinite;
+    position: absolute;
+    left: 54.3%;
+    top:69.5%
+}
+@keyframes Rotation {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.flag{
+    position: absolute;
+    left: 54%;
+    bottom: 34.3%;
+}
+@keyframes sunMovement {
+    100% {
+        transform: translate(-1000px);
+    }
+}

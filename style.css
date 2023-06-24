@@ -1,0 +1,150 @@
+ *{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(217, 217, 84)
+}
+h1{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.row1{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    animation: sample 3s infinite alternate;
+    background-color:  steelblue;
+}
+@keyframes sample{
+    0%{
+        transform: skew(-30deg);
+    }
+    100%{
+        transform: skew(30deg);
+    }
+}
+.row2{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 70px;
+}
+.box1{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(175, 121, 175) ;
+    animation: row 3s infinite alternate;
+}
+@keyframes row{
+    0%{
+        transform: skewY(-30deg);
+    }
+    100%{
+        transform: skewY(30deg);
+    }
+}
+.row3{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 70px;
+}
+.box2{
+    
+    height: 100px;
+    width: 100px;
+    /* background-color: steelblue ;
+    animation-name: round;
+    animation-duration: 3s infinite alternate; */ 
+    animation-name: Rotation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    background-color: steelblue;
+}
+@keyframes Rotation{
+    /* 0%{
+       transform: rotate(0);
+    } */
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.row4{
+
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 70px;
+}
+.box3{
+    height: 100px;
+    width: 100px;
+    animation: transit 4s infinite alternate;
+    background-color: steelblue;
+    border: 2px solid steelblue;
+}
+@keyframes transit {
+    0% {
+        transform: scalex(0.5);
+    }
+
+    50% {
+        transform: scalex(1);
+    }
+
+    100% {
+        transform: scalex(0.5);
+    }
+}
+.box4{
+    height: 100px;
+    width: 100px;
+    animation: height 4s infinite alternate;
+    background-color: brown;
+    border: 2px solid brown;
+}
+@keyframes height {
+    0%{
+        transform: scaleY(0.5);
+    }
+    50%{
+        transform: scaleY(1);
+    }
+    100%{
+        transform: scaleY(0.5);
+    }
+ }
+ .box5{
+    height: 100px;
+    width: 100px;
+    animation: goaround 4s infinite alternate;
+    background-color: green;
+    border: 2px solid green;
+ }
+ @keyframes goaround {
+        /* 0%{
+           transform: rotate(0);
+        } */
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+p{
+    display: flex;
+    align-items: end;
+    font-weight: bold;
+}
+a{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    font-size: 40px;
+}
+    
+
+
